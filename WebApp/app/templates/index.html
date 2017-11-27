@@ -1,0 +1,35 @@
+<html>
+	<head>
+	{% extends "base.html" %}
+	{% block content %}
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	</head>
+	<body>
+		<h1>{{ title }}</h1>
+		<h2>
+		Rules:
+		</h2>
+		<p>You will be provided with a word of seven letters or more which we'll call the "sourceword".<br> 
+		You are then to think up seven three-or-more letter words made up from the letters contained within the sourceword, ensuring that:<br>
+		  <ul>		
+			<li>Each word is only made up from the letters contained within the sourceword.</li>
+			<li>Each word exists within the dictionary (i.e., it's a “real” word).</li>
+			<li>The words all have three letters or more.</li>
+			<li>There are no duplicate words.</li>
+			<li>None of the seven words is the source word.</li>
+			<li>And don't forget: case is NOT significiant (Pet, PET, and pet are the *same* word).</li>	</p>
+		  </ul>
+		<div>
+			<form action="/play">
+				<input type="submit" value="Play">
+			</form>
+
+		
+			<form action="/leaderboard">
+				<input type="submit" value="LeaderBoard">
+			</form>
+	</div>
+			
+  </body>
+  {% endblock %}
+</html>

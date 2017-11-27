@@ -1,0 +1,20 @@
+<html>
+	<head>
+	{% extends "base.html" %}
+	{% block content %}
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	</head>
+	<body>
+		<h1>Let's get busy!</h1>
+		<h2>The clock is ticking...</h2>
+		<p> Source word is: {{word}}</p>
+		<p> Enter your seven words in this box, seperating each word by a space </p>
+		<form action="/processAnswers" method="POST">
+		<input type="text" name="inputWords">
+		<input type="submit" value="Submit">
+</form> 
+		
+	</body>
+	
+	{% endblock %}
+</html>

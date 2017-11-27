@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 100px;
+	margin-top: 100px;
+}
+h2 {
+	color: navy;
+	margin-left: 100px;
+	
+}
+p {
+	margin-left: 100px;
+}
+ul {
+	margin-left: 100px;
+}
+form {
+	margin-left: 100px;
+}
+div {
+	display: inline-block;
+	
+	margin-left: 120px;
+}
