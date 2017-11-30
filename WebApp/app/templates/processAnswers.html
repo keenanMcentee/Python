@@ -6,9 +6,34 @@
 	</head>
 	<body>
 	<h1>
-		{% for word in words %}
-		<p>{{ word }} </b></p>
-    {% endfor %}
+		{% if rules_followed  == True %}
+			<h1>Congrats!</h1><br>
+			<div>
+			<form action="/play">
+				<input type="submit" value="Play">
+			</form>
+			
+			
+			<form action="/leaderboard" method="POST">
+			Name:<input type="text" name="name">
+			<input type="submit" value="Submit">
+			</form>
+	</div>
+			
+			
+		{% else %}
+			<h1>Something ain't right! </h1><br>
+			<h2>So things wrong are: </h2>
+			<p> <ul> <li> Bad Words:  
+				{% for bad in badWord %}		
+					{{ bad }}
+				{% endfor %}
+			</li> 
+			<li>Word count: {{ numWord }} </li>
+			</ul> </p>
+			
+			
+		{% endif %}
 	</h1>
 		
 	</body>

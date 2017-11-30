@@ -26,3 +26,8 @@ div {
 	
 	margin-left: 120px;
 }
+table {
+    border: 1px solid black;
+    padding: 5px;
+	border-spacing: 5px;
+}

@@ -1,0 +1,26 @@
+<html>
+	<head>
+	{% extends "base.html" %}
+	{% block content %}
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	</head>
+	<body>
+
+	<table>
+	  <tr>
+		<th>Name</th>
+		<th>Score</th> 
+	  </tr>
+	  {% for score in list %}		
+	  <tr>
+	  
+		<td>{{ names }}</td>
+		<td>{{ score }}</td>
+	  </tr>		
+	  {% endfor %}
+	</table>
+	
+	</body>
+	
+	{% endblock %}
+</html>
